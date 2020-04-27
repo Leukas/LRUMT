@@ -29,10 +29,15 @@ tools/unmt/ # points to UnsupervisedMT/NMT/
 ```
 #### Example
 From the scripts directory, run: 
+
 ```./pipeline.sh normal 1M``` 
+
 This will run all preprocessing steps from downloading the data up to mapping embeddings with vecmap. The "1M" specifies using 1 million sentences per language.
+
 To train the NMT system, run:
+
 ```./nmt_system ../data/mono/1M.en ../data/mono/1M.de toku.true.bpe_60000 1M test_run```
+
 This will train an NMT system on 1 million sentences per language, using the pretrained embeddings from the previous step.
 
 #### Notes
