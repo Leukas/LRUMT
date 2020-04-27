@@ -3,9 +3,7 @@ This repository contains scripts helpful for reproducing the results in:
 
 Lukas Edman, Antonio Toral, and Gertjan van Noord. 2020. Low-Resource Unsupervised NMT: Diagnosing the Problem and Providing a Linguistically Motivated Solution. *The 22nd Annual Conference of the European Association for Machine Translation (EAMT 2020)* (Accepted).
 
-
-### How to run
-#### Requirements
+### Requirements
 - Python 3
 - PyTorch (tested on 1.2)
 - [Moses](https://github.com/moses-smt/mosesdecoder)
@@ -27,7 +25,7 @@ tools/fastText/
 tools/vecmap/
 tools/unmt/ # points to UnsupervisedMT/NMT/
 ```
-#### Example
+### Example
 From the scripts directory, run: 
 
 ```./pipeline.sh normal 1M``` 
@@ -40,6 +38,6 @@ To train the NMT system, run:
 
 This will train an NMT system on 1 million sentences per language, using the pretrained embeddings from the previous step.
 
-#### Notes
+### Notes
 - Depending on your system, some steps of the preprocessing pipeline may need to be run individually. This is especially the case for the dependency parsing, where we recommended splitting the data into 10000-sentence chunks and dependency parsing the chunks in parallel to speed up the parsing time.
 - To evaluate BLI precision at 5 and 10, replace ```eval_translation.py``` from VecMap with our modified version included in ```tools/vecmap/```, and use the flag: ```--p_at 10```. 
