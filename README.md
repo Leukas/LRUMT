@@ -42,4 +42,4 @@ This will train an NMT system on 1 million sentences per language, using the pre
 
 #### Notes
 - Depending on your system, some steps of the preprocessing pipeline may need to be run individually. This is especially the case for the dependency parsing, where we recommended splitting the data into 10000-sentence chunks and dependency parsing the chunks in parallel to speed up the parsing time.
-- To evaluate BLI precision at 5 and 10, replace ```eval_translation.py``` from VecMap with our modified version included in ```tools/vecmap/```. 
+- To evaluate BLI precision at 5 and 10, replace ```eval_translation.py``` from VecMap with our modified version included in ```tools/vecmap/```, and use the flag: ```--p_at 10```. 
