@@ -15,7 +15,7 @@ Lukas Edman, Antonio Toral, and Gertjan van Noord. 2020. Low-Resource Unsupervis
 - [VecMap](https://github.com/artetxem/vecmap)
 - [UnsupervisedMT](https://github.com/facebookresearch/UnsupervisedMT)
 
-The scripts here assume these are saved (or soft-linked) in a directory on the same level as the scripts directory, with the following subdirectories:
+The scripts here assume these are saved (or soft-linked) in the ```tools``` directory on the same level as the ```scripts``` directory, with the following subdirectories:
 ```
 tools/moses/
 tools/fastBPE/
@@ -26,7 +26,7 @@ tools/vecmap/
 tools/unmt/ # points to UnsupervisedMT/NMT/
 ```
 ### Example
-From the scripts directory, run: 
+From the ```scripts``` directory, run: 
 
 ```./pipeline.sh normal 1M``` 
 
