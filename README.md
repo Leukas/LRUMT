@@ -1,7 +1,7 @@
 # Low-Resource Unsupervised Machine Translation (LRUMT)
 This repository contains scripts helpful for reproducing the results in:
 
-Lukas Edman, Antonio Toral, and Gertjan van Noord. 2020. Low-Resource Unsupervised NMT: Diagnosing the Problem and Providing a Linguistically Motivated Solution. *The 22nd Annual Conference of the European Association for Machine Translation (EAMT 2020)* (Accepted).
+Lukas Edman, Antonio Toral, and Gertjan van Noord. 2020. Low-Resource Unsupervised NMT: Diagnosing the Problem and Providing a Linguistically Motivated Solution. *The 22nd Annual Conference of the European Association for Machine Translation (EAMT 2020)*.
 
 ### Requirements
 - Python 3
